@@ -1,13 +1,10 @@
-import requests
-from google.oauth2 import service_account
 import firebase_admin
-from firebase_admin import messaging
-import cv2
+import requests
 import torch
-from torchvision.models.detection import fasterrcnn_resnet50_fpn
 import torchvision.transforms as T
 from PIL import Image
-import numpy as np
+from firebase_admin import messaging
+from torchvision.models.detection import fasterrcnn_resnet50_fpn
 
 # Google Nest API setup
 NEST_API_URL = "https://smartdevicemanagement.googleapis.com/v1"
